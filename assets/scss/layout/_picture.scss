@@ -1,0 +1,11 @@
+.picture {
+    grid-area: picture;
+        &__img{
+            width: 100%;
+            height: auto;
+
+            @media (min-width:992px){
+                height: 100% ;
+            }
+        }
+    }

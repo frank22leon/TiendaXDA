@@ -9965,55 +9965,84 @@ body {
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template: 60px 1fr 1fr 200px/100%;
-  grid-template-areas: "header" "picture" "main" "footer";
+  grid-template: 60px 20rem 1fr 200px/100%;
+  grid-template-areas: "header" "picture" "mainsection" "footer";
+}
+@media (min-width: 576px) {
+  body {
+    grid-template: 60px 28rem 1fr 200px/100%;
+    grid-template-areas: "header" "picture" "mainsection" "footer";
+  }
+}
+@media (min-width: 768px) {
+  body {
+    grid-template: 60px 35rem 1fr 200px/100%;
+    grid-template-areas: "header" "picture" "mainsection" "footer";
+  }
+}
+@media (min-width: 992px) {
+  body {
+    grid-template: 60px 1fr 300px/0.8fr 1.2fr;
+    grid-template-areas: "header header" "mainsection picture" "footer picture";
+  }
 }
 
-/*
-.header {
-grid-area: header;
-box-sizing: border-box;   
-background-color: $fl-color-primary;
-height:80px;
-position: fixed;
-top: 0;
-left: 0;
-
-}
-.nav    {
-    display: flex;
-    justify-content: space-between;
-    &__logo {
-        font-size:30px;
-        padding: 0 40px
-
-    }
+.header__logo {
+  color: #FFF !important;
+  background-color: #0C0910;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
 }
 
-*/
 .picture {
   grid-area: picture;
 }
 .picture__img {
   width: 100%;
+  height: auto;
+}
+@media (min-width: 992px) {
+  .picture__img {
+    height: 100%;
+  }
 }
 
-.main {
-  grid-area: main;
+.main-section {
+  grid-area: mainsection;
   padding: 8%;
   text-align: left;
+  background: #FFF;
 }
-.main__title {
+.main-section__title {
   font-family: "Old Standard TT", serif;
   font-weight: 700;
   color: #0C0910;
 }
-.main__text {
+@media (min-width: 992px) {
+  .main-section__title {
+    padding-right: 100px;
+    font-size: 50px;
+  }
+}
+.main-section__text {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: #A6A5A8;
   line-height: 30px;
   padding: 10px 0;
+}
+@media (min-width: 992px) {
+  .main-section__text {
+    padding-right: 150px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-section__text {
+    padding-right: 150px;
+    font-size: 30px;
+    padding-bottom: 2rem;
+  }
 }
 
 .footer {
@@ -10033,6 +10062,14 @@ left: 0;
   font-weight: 400;
   font-size: 20px;
 }
+.footer__text {
+  background-color: #FFF;
+  color: #0C0910;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  width: 200px;
+  right: 0;
+}
 
 .fl-btn {
   text-decoration: none !important;
@@ -10050,7 +10087,7 @@ left: 0;
 }
 
 .fl-mail [type=email] {
-  width: 100%;
+  width: 80%;
   padding: 3px 10px;
   border: 1px solid #f6f6f6;
   background-color: #fff;

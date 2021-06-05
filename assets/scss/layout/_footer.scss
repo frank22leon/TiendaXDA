@@ -1,0 +1,26 @@
+.footer {
+    grid-area: footer;
+    background-color: $fl-color-secondary;
+    padding: 40px 50px;
+        &__title   {
+            color: $fl-color-primary;
+            font-family: $old-standard;
+            font-weight: $bold;
+            font-size: $fl-xx-large;
+        }
+        &__subtitle {
+            color: $fl-color-primary;
+            font-family: $old-standard;
+            font-weight: $regular;
+            font-size:$fl-x-large;
+        }
+        &__text {
+            background-color: $fl-color-primary;
+            color: $fl-color-secondary;
+            transform: rotate(90deg);
+            transform-origin: left top 0;
+            width: 200px;
+            right:0;
+    
+        }
+    }

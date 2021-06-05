@@ -1,0 +1,8 @@
+.header{
+    &__logo {
+        color: $fl-color-primary !important;
+        background-color: $fl-color-secondary;
+        font-family: $old-standard;
+        font-weight: $bold;
+    }
+}

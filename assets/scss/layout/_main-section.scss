@@ -1,0 +1,35 @@
+.main-section {
+    grid-area: mainsection;
+    padding: 8%;
+    text-align: left;
+    background: $fl-color-primary;
+        &__title    {
+            font-family: $old-standard;
+            font-weight: $bold;
+            color: $fl-color-secondary;
+            @media (min-width: 992px) {
+                padding-right: 100px;
+                font-size: $fl-xxx-large;
+            }
+        }
+        &__text {
+            font-family: $raleway;
+            font-weight: $regular;
+            color: $fl-quick-silver;
+            line-height: 30px;
+            padding: 10px 0;
+            
+            @media (min-width: 992px) {
+                padding-right: 150px;
+                font-size: $fl-x-large;
+            }
+
+            @media (min-width: 1200px) {
+                padding-right: 150px;
+                font-size: $fl-xx-large;
+                padding-bottom: 2rem ;
+            }
+
+        }
+    
+    }
