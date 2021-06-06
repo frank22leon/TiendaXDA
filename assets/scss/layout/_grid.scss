@@ -3,21 +3,21 @@ body {
     width: 100%;
     height: 100%;
     grid-template: 60px 20rem 1fr 200px / 100%;
-    grid-template-areas: "header" "picture" "mainsection" "footer";
+    grid-template-areas: "navbar" "picture" "mainsection" "footer";
 
     @media (min-width: 576px)   {
         grid-template: 60px 28rem 1fr 200px / 100%;
-    grid-template-areas: "header" "picture" "mainsection" "footer";
+    grid-template-areas: "navbar" "picture" "mainsection" "footer";
     }
 
     @media (min-width:768px) {
         grid-template: 60px 35rem 1fr 200px / 100%;
-    grid-template-areas: "header" "picture" "mainsection" "footer";
+    grid-template-areas: "navbar" "picture" "mainsection" "footer";
     }
 
     @media (min-width: 992px)   {
     grid-template: 60px 1fr 300px / 0.8fr 1.2fr;
-    grid-template-areas: "header header" "mainsection picture" "footer picture";
+    grid-template-areas: "navbar navbar" "mainsection picture" "footer picture";
     }
 }
 

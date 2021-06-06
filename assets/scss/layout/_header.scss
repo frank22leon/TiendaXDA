@@ -1,8 +1,30 @@
-.header{
-    &__logo {
-        color: $fl-color-primary !important;
-        background-color: $fl-color-secondary;
-        font-family: $old-standard;
-        font-weight: $bold;
+.fl-navbar  {
+    grid-area: navbar;
+    width: 100%;
+    color: #fff;
+    text-align: right;
+    background-color: $fl-color-primary;
+    &__list {
+        list-style: none;
+        color: $fl-color-secondary;
+    }
+    &__item {
+        display: inline-block;
+        padding: 20px;
+    }
+    &__item:hover   {
+        background-color:$fl-granite-gray;
+    }
+   
+    &__link {
+        color:$fl-color-secondary;
+        text-decoration: none;
+    }
+    &__link--icon {
+        color: $fl-color-primary;
+    }
+    &__item--icon {
+        background: $fl-color-secondary;
     }
 }
+
