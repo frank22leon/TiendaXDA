@@ -9964,38 +9964,26 @@ body {
 }
 @media (min-width: 992px) {
   body {
-    grid-template: 60px 1fr 300px/0.8fr 1.2fr;
+    grid-template: 60px 1fr 200px/0.8fr 1.2fr;
     grid-template-areas: "navbar navbar" "mainsection picture" "footer picture";
   }
 }
 
-.fl-navbar {
+.navbar {
   grid-area: navbar;
-  width: 100%;
-  color: #fff;
-  text-align: right;
-  background-color: #FFF;
 }
-.fl-navbar__list {
-  list-style: none;
-  color: #0C0910;
+
+.navbar-brand {
+  font-family: "Old Standard TT", serif;
+  color: #FFF !important;
+  background-color: #0C0910;
+  padding: 15px;
 }
-.fl-navbar__item {
-  display: inline-block;
-  padding: 20px;
-}
-.fl-navbar__item:hover {
-  background-color: #646266;
-}
-.fl-navbar__link {
-  color: #0C0910;
-  text-decoration: none;
-}
-.fl-navbar__link--icon {
-  color: #FFF;
-}
-.fl-navbar__item--icon {
-  background: #0C0910;
+
+.nav-link {
+  color: #0C0910 !important;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 
 .picture {
@@ -10075,13 +10063,13 @@ body {
   font-size: 30px;
   text-decoration: none;
   padding: 5px;
-  width: 20rem;
+  width: 200px;
   transform: rotate(90deg);
   text-align: center;
   position: absolute;
   transform-origin: left top 0;
-  top: 20px;
-  left: 47.6rem;
+  top: 0;
+  left: 100%;
 }
 
 .fl-btn {

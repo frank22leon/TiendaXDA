@@ -23,12 +23,13 @@
             font-size: $fl-xx-large;
             text-decoration: none;
             padding:5px;
-            width: 20rem;
+            width: 200px;
             transform: rotate(90deg);
             text-align: center;
             position: absolute;
             transform-origin: left top 0;
-            top: 20px;
-            left:47.6rem;
+            top: 0;
+            left: 100%;
+        
         }
     }

@@ -11,42 +11,46 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap"
         rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!--Mi estilo-->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav class="fl-navbar">
-            <ul class="fl-navbar__list">
-                <li class="fl-navbar__item fl-navbar__item--icon ">
-                    <a class="fl-navbar__link fl-navbar__link--icon" href="#">XDA</a>
-                </li>
-                <li class="fl-navbar__item">
-                    <a class="fl-navbar__link" href="#">Mujer</a>
-                </li>
-                <li class="fl-navbar__item">
-                    <a class="fl-navbar__link" href="#">Hombre</a>
-                </li>
-                <li class="fl-navbar__item">
-                    <a class="fl-navbar__link" href="#">Accesorios</a>
-                </li>
-                <li class="fl-navbar__item">
-                    <a class="fl-navbar__link" href="#">Blog</a>
-                </li>
-            </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-withe pl-0 pt-0">
+        <a class="navbar-brand" href="#">XDA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span> <i class="fas fa-bars" style="color:black; font-size:28px;"></i> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hombre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mujer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accesorios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <section class="picture">
         <img class="picture__img" src="./assets/img/imagen1.png" alt="imagen-principal">
     </section>
+
     <section class="main-section">
         <h1 class="main-section__title">LOREM IPSUM AD VALOREM</h1>
         <P class="main-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod porro placeat fuga nam
             aliquid, rerum nemo distinctio blanditiis sint r Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod porro placeat fuga nam Lorem ipsum dolor sit amet consectetur.</P>
         <a href="#" class="main-section__fl-btn fl-btn">Ir a tienda</a>
-
     </section>
 
     <footer class="footer">

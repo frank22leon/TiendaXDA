@@ -16,12 +16,10 @@ body {
     }
 
     @media (min-width: 992px)   {
-    grid-template: 60px 1fr 300px / 0.8fr 1.2fr;
+    grid-template: 60px 1fr 200px / 0.8fr 1.2fr;
     grid-template-areas: "navbar navbar" "mainsection picture" "footer picture";
     }
 }
-
-
 
 
 
